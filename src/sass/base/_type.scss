@@ -1,0 +1,15 @@
+strong, b, time {
+  font-weight: bold;
+}
+p {
+  margin: 0 auto 1em;
+  line-height: 1.4;
+  max-width: 888px;
+  align-self: center;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+a {
+  line-height: 1.25;
+}

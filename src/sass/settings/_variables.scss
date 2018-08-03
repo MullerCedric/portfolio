@@ -1,0 +1,19 @@
+$wrapper: 1440px;
+$gutter: 24px;
+$colNumber: 12;
+
+$gdName: 'o-grid';
+$cellAndGutterName: 'col';
+$cellName: 'cell';
+
+$lap: 1023px;
+$tablet: 725px;
+$mobile: 650px;
+$thumb: 375px;
+
+$breakpoints: (
+        "lap": "all and (max-width: #{$lap})",
+        "tablet": "all and (max-width: #{$tablet})",
+        "mobile": "all and (max-width: #{$mobile})",
+        "thumb": "all and (max-width: #{$thumb})"
+);

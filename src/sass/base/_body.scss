@@ -1,0 +1,11 @@
+*, body {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  color: $black;
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}

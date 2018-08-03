@@ -1,0 +1,20 @@
+{
+  "name": "cm-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio personnel de Cédric Müller",
+  "main": "gulpfile.js",
+  "author": "Cédric Müller",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-iife-wrap": "^1.1.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-image": "^4.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

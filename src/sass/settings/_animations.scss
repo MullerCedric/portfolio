@@ -1,0 +1,8 @@
+a, button, input, textarea, :before, :after {
+  transition: color 0.28s cubic-bezier(.4, 0, .2, 1),
+  background-color 0.28s cubic-bezier(.4, 0, .2, 1),
+  border 0.28s cubic-bezier(.4, 0, .2, 1),
+  box-shadow 0.28s cubic-bezier(.4, 0, .2, 1),
+  margin 0.25s cubic-bezier(.4, 0, .2, 1),
+  padding 0.25s cubic-bezier(.4, 0, .2, 1);
+}
