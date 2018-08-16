@@ -7,16 +7,12 @@
     </div>
 
     <ul class="c-mainMenu__list">
-		<?php if ( cm_get_menu( 'header-menu' )->getItems() ):
-			foreach ( cm_get_menu( 'header-menu' )->getItems() as $item ):
-				$current = ( $item->url === get_permalink() ) ? ' c-mainMenu__links--current' : ''; ?>
+		<?php if ( cm_get_menu( 'main-menu' )->getItems() ):
+			foreach ( cm_get_menu( 'main-menu' )->getItems() as $item ): ?>
                 <li class="c-mainMenu__item">
                     <a href="<?= $item->url; ?>"
-                       class="c-mainMenu__link<?= $current; ?>"><?= $item->label; ?></a>
+                       class="<?= cm_get_menu_classes($item, 'main'); ?>"><?= $item->label; ?></a>
                 </li>
 			<?php endforeach; endif; ?>
-        <li class="c-mainMenu__item">
-            <a href="index.php" class="c-mainMenu__link c-mainMenu__link--index" title="vers la page d'accueil">Portfolio de Cédric Müller</a>
-        </li>
     </ul>
 </nav>

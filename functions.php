@@ -17,10 +17,8 @@ $CmPortfolio = new CmPortfolio();
  */
 add_filter( 'wp_title', 'cm_tab_title' );
 function cm_tab_title( $title ) {
-	if ( empty( $title ) ) {
-		$title = the_title();
-	}
-	$title .= ' - ' . get_bloginfo( 'name' );
+	!empty( $title ) ? $title .= ' - ' . get_bloginfo( 'name' ) : $title .= get_bloginfo( 'name' ) . ', ' . get_bloginfo( 'description' ) ;
+	if(is_post_type_archive('project')) $title = ' Mes travaux - ' . get_bloginfo( 'name' );
 
 	return trim( $title );
 }
@@ -53,6 +51,20 @@ function cm_get_menu( $location ) {
 	return $CmPortfolio->menus[ $location ];
 }
 
+function cm_get_menu_classes( $item, $menu = 'main' ) {
+	$classes = 'c-'. $menu .'Menu__link';
+
+	if($menu === 'main') $classes .= ( preg_match( '#^(https?)?://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] .'$#', $item->url) ) ? ' c-mainMenu__links--current' : '';
+
+	if(is_array($item->classes)) {
+		foreach ($item->classes as $cssClass) {
+			$classes .= ' '.$cssClass;
+		}
+	}
+
+	return $classes;
+}
+
 /*
  * Retrieves the absolute URI for given asset in this theme
  */
@@ -77,4 +89,20 @@ function cm_get_src( $arrImg, $size = 'full' ) {
 	}
 
 	return $arrImg['url'] ?? null;
+}
+
+/*
+ * Handling categories taxonomy for Project post type
+ */
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+	if( is_category() ) {
+		$post_type = get_query_var('post_type');
+		if($post_type)
+			$post_type = $post_type;
+		else
+			$post_type = array('nav_menu_item', 'post', 'project');
+		$query->set('post_type',$post_type);
+		return $query;
+	}
 }
