@@ -1,4 +1,4 @@
-<nav class="c-mainMenu">
+<nav class="c-mainMenu" id="nav">
     <h2 class="hidden">
         Navigation principale
     </h2>
