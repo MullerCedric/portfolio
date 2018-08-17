@@ -55,6 +55,7 @@ function cm_get_menu_classes( $item, $menu = 'main' ) {
 	$classes = 'c-'. $menu .'Menu__link';
 
 	if($menu === 'main') $classes .= ( preg_match( '#^(https?)?://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] .'$#', $item->url) ) ? ' c-mainMenu__links--current' : '';
+	if($menu === 'social' AND get_field('icon', $item->id)) $classes .= ' socicon socicon-' . get_field('icon', $item->id);
 
 	if(is_array($item->classes)) {
 		foreach ($item->classes as $cssClass) {

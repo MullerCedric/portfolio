@@ -3,6 +3,7 @@
 class Item
 {
     protected $post;
+    public $id;
     public $url;
     public $label;
     public $classes = [];
@@ -10,6 +11,7 @@ class Item
     function __construct($post)
     {
         $this->post = $post;
+        $this->id = $post->ID;
         $this->url = $post->url;
         $this->label = $post->title;
         $this->classes = $this->getSanitizedClasses($post->classes);
