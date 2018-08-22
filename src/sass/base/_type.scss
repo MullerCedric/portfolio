@@ -1,11 +1,10 @@
 strong, b, time {
-  font-weight: bold;
+  font-weight: 600;
 }
 p {
-  margin: 0 auto 1em;
-  line-height: 1.4;
-  max-width: 888px;
-  align-self: center;
+  margin: 0 auto .75em;
+  line-height: 1.25;
+  max-width: 950px;
 }
 p:last-of-type {
   margin-bottom: 0;

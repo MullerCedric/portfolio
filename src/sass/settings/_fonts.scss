@@ -9,3 +9,32 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Mosk';
+  src: url('../fonts/mosk_thin_100-webfont.woff2') format('woff2'),
+  url('../fonts/mosk_thin_100-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mosk';
+  src: url('../fonts/mosk_semi-bold_600-webfont.woff2') format('woff2'),
+  url('../fonts/mosk_semi-bold_600-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mosk';
+  src: url('../fonts/mosk_extra-bold_800-webfont.woff2') format('woff2'),
+  url('../fonts/mosk_extra-bold_800-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mosk';
+  src: url('../fonts/mosk_ultra-bold_900-webfont.woff2') format('woff2'),
+  url('../fonts/mosk_ultra-bold_900-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}

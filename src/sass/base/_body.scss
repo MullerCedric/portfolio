@@ -1,11 +1,9 @@
 *, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Mosk', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 }
 body {
   color: $black;
   position: relative;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
   margin: 0;
 }

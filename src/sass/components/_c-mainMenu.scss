@@ -1,0 +1,39 @@
+.c-mainMenu {
+  background-color: $yellow;
+  width: 288px;
+  position:fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  &__list {
+    transform-origin: left top;
+    transform:rotate(-90deg) translateX(-100%);
+    width: 100vh;
+    height: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 3em 1.75em;
+    background-color: $yellow;
+    color: $black;
+    &:hover, &:focus {
+      background-color: $yellow;
+    }
+    &--index {
+      font-size: 0;
+      &:after {
+        display: inline-block;
+        content: ';';
+        font-size: 120px;
+        font-weight: 900;
+        transform: rotate(90deg);
+        padding: .13em .5em;
+      }
+    }
+  }
+}

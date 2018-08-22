@@ -1,19 +1,9 @@
 a {
   text-decoration: none;
-  color: $primary;
-  &:after {
-    content: '';
-    height: 2px;
-    margin-top: -2px;
-    margin-bottom: 2px;
-    opacity: 0;
-  }
+  color: $deepBlue;
+  background-color: $white;
   &:hover, &:focus {
-    color: $secondary;
-    &:after {
-      margin-top: 2px;
-      margin-bottom: -2px;
-      opacity: 1;
-    }
+    color: $black;
+    background-color: $pink;
   }
 }

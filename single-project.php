@@ -6,12 +6,15 @@
 <html lang="fr">
 <?php get_header(); ?>
 <body>
-<header>
-    <h1>
-		<?= get_the_title(); ?>
-    </h1>
-</header>
-<main id="content"><?php
+<main id="content">
+    <header>
+        <h1>
+			<?= get_the_title(); ?>
+        </h1>
+        <div class="hidden">
+            <a href="#nav">Aller à la navigation</a>
+        </div>
+    </header><?php
 	if ( have_posts() ): while ( have_posts() ): the_post();
 		$intro = get_field( 'basic_info' ); ?>
         <header>

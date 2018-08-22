@@ -6,15 +6,15 @@
 <html lang="fr">
 <?php get_header(); ?>
 <body>
-<header>
-    <h1>
-        <span class="hidden">Portfolio de </span>Cédric Müller
-    </h1>
-    <div class="hidden">
-        <a href="#nav">Aller à la navigation</a>
-    </div>
-</header>
 <main id="content">
+    <header>
+        <h1>
+            <span class="hidden">Portfolio de </span>Cédric Müller
+        </h1>
+        <div class="hidden">
+            <a href="#nav">Aller à la navigation</a>
+        </div>
+    </header>
     <ul>
         <li>
             Mes projets

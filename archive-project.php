@@ -6,12 +6,15 @@
 <html lang="fr">
 <?php get_header(); ?>
 <body>
-<header>
-	<h1>
-		<?= get_bloginfo('name'); ?>
-	</h1>
-</header>
-<main id="content"><?php
+<main id="content">
+    <header>
+        <h1>
+			<?= get_bloginfo('name'); ?>
+        </h1>
+        <div class="hidden">
+            <a href="#nav">Aller à la navigation</a>
+        </div>
+    </header><?php
 	$projects = new WP_Query(['post_type' => 'project']);
 	if($projects->have_posts()): while($projects->have_posts()): $projects->the_post();
 	$content = get_field('basic_info'); ?>

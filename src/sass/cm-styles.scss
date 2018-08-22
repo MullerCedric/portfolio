@@ -28,12 +28,13 @@
 @import "base/images";
 @import "base/inputs";
 @import "base/links";
-@import "base/main";
 @import "base/nav";
 @import "base/section";
 @import "base/sizes";
 @import "base/type";
 
 @import "objects/o-layout";
+
+@import "components/c-mainMenu";
 
 @import "trumps/hidden";

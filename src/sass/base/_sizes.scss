@@ -1,15 +1,13 @@
 *, body {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 h1 {
-  font-size: 3.6em;
+  font-size: 3.5em;
 }
 h2 {
-  font-size: 2em;
-}
-small {
-  font-size: 0.775em;
+  font-size: 1.5em;
 }
 
 @media all and (max-width: $mobile) {

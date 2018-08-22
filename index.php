@@ -6,12 +6,15 @@
 <html lang="fr">
 <?php get_header(); ?>
 <body>
-<header>
-    <h1>
-		<?php the_title(); ?>
-    </h1>
-</header>
-<main id="content"><?php
+<main id="content">
+    <header>
+        <h1>
+			<?php the_title(); ?>
+        </h1>
+        <div class="hidden">
+            <a href="#nav">Aller à la navigation</a>
+        </div>
+    </header><?php
 	if ( have_posts() ): while ( have_posts() ): the_post();
         if ( have_rows( 'sections' ) ): while ( have_rows( 'sections' ) ): the_row(); ?>
             <section>
