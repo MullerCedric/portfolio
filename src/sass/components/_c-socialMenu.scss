@@ -1,0 +1,21 @@
+.c-socialMenu {
+  position: fixed;
+  left: 2.5vw;
+  bottom: 1vh;
+  &__link {
+    color: $black;
+    background-color: transparent;
+    &:before {
+      font-size: 25px;
+      padding: .5em .25em;
+    }
+  }
+  &__item + .c-socialMenu__item:before {
+    display: inline-block;
+    content: '';
+    width: 4vw;
+    height: 3px;
+    margin: 7px 0;
+    background-color: $black;
+  }
+}

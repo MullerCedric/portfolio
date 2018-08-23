@@ -8,7 +8,7 @@
 			foreach ( cm_get_menu( 'social-menu' )->getItems() as $item ): ?>
 				<li class="c-socialMenu__item">
 					<a href="<?= $item->url; ?>"
-					   class="<?= cm_get_menu_classes($item, 'social'); ?>"><?= $item->label; ?></a>
+					   class="<?= cm_get_menu_classes($item, 'social'); ?>"><span class="hidden"><?= $item->label; ?></span></a>
 				</li>
 			<?php endforeach; endif; ?>
 	</ul>

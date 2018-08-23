@@ -10,12 +10,4 @@ input[type='text'], input[type='email'], textarea {
 }
 input[type='submit'] {
   width: auto;
-  background: $pink;
-  border: none;
-  color: $black;
-  padding: .75em 1.25em;
-  &:hover, &:focus {
-    cursor: pointer;
-    background-color: $brightPink;
-  }
 }

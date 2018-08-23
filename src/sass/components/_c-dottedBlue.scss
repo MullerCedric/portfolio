@@ -1,0 +1,16 @@
+.c-dottedBlue {
+  background-image: linear-gradient(to right, $blue, $blue 39.7%, $white 39.7%);
+  z-index: -5;
+  &:before {
+    display: block;
+    content: '';
+    width: 45vw;
+    height: 42vh;
+    background-image: radial-gradient(ellipse at center, $transpBlue 0%, $transpBlue 10%, transparent 10%);
+    background-repeat: repeat;
+    background-size: 26px 26px;
+    position: absolute;
+    top: 2vh;
+    left: 8vw;
+  }
+}
