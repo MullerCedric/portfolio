@@ -28,6 +28,7 @@
 @import "base/images";
 @import "base/inputs";
 @import "base/links";
+@import "base/main";
 @import "base/nav";
 @import "base/section";
 @import "base/sizes";
@@ -37,9 +38,12 @@
 @import "objects/o-vCenteredContent";
 
 @import "components/c-dottedBlue";
+@import "components/c-blueRect";
 @import "components/c-mainMenu";
 @import "components/c-socialMenu";
+@import "components/c-changedTitle";
 @import "components/c-frontTitle";
 @import "components/c-cta";
+@import "components/c-archProject";
 
 @import "trumps/hidden";

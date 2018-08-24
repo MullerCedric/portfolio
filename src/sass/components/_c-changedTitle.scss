@@ -1,0 +1,8 @@
+.c-changedTitle {
+  &:before {
+    display: block;
+  }
+  &--projects:before {
+    content: 'Mes travaux';
+  }
+}

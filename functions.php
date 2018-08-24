@@ -78,7 +78,9 @@ function cm_get_theme_asset( $src = '' ) {
  */
 add_action( 'after_setup_theme', 'cm_register_image_sizes' );
 function cm_register_image_sizes() {
-	add_image_size( 'cm-project', 500, 550, true );
+	add_image_size( 'cm-projectThumb', 255, 330, true );
+	add_image_size( 'cm-banner', 1170, 754, false );
+	add_image_size( 'cm-gallery', 1340, 754, false );
 }
 
 /*

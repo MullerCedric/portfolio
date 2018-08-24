@@ -1,0 +1,13 @@
+.c-blueRect {
+  background-image: linear-gradient($blue, $blue), linear-gradient($white, $white);
+  background-size: 830px, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 80vh;
+  &__title {
+    width: 830px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 59px;
+  }
+}

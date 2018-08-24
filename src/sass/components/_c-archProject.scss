@@ -1,0 +1,50 @@
+.c-archProject {
+  display: inline-block;
+  position: relative;
+  background-color: $white;
+  width: 555px;
+  min-height: 330px;
+  box-shadow: 0 3px 35px $transpBlue;
+  margin-right: 30px;
+  margin-bottom: 125px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  &__thumbnail {
+    position: relative;
+    height: 330px;
+    width: 255px;
+    float: left;
+    margin: -45px 15px 0 -100px;
+    background-color: $yellow;
+    background-image: radial-gradient($black 7%, transparent 7%),
+    radial-gradient($black 7%, transparent 7%);
+    background-size: 40px 40px;
+    background-position: 5px 5px,25px 25px;
+  }
+  &:nth-child(odd) {
+    margin-left: 85px;
+  }
+  &:nth-child(even) {
+    margin-right: 0;
+    margin-left: 30px;
+    position: relative;
+    top: 165px;
+    & .c-archProject__thumbnail {
+      float: right;
+      margin-left: 15px;
+      margin-right: -100px;
+    }
+    & .c-archProject__cta {
+      right: auto;
+      left: 0;
+    }
+    &:last-child{
+      margin-bottom: 290px;
+    }
+  }
+  &__cta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

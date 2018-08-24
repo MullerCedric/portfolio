@@ -1,6 +1,6 @@
 .c-mainMenu {
   background-color: $yellow;
-  width: 288px;
+  width: 240px;
   position:fixed;
   right: 0;
   top: 0;
@@ -10,7 +10,7 @@
     transform-origin: left top;
     transform:rotate(-90deg) translateX(-100%);
     width: 100vh;
-    height: 288px;
+    height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,17 +1,17 @@
 .c-cta {
   display: inline-block;
   margin: 1.75em 2.5em 0;
-  &__link, input[type='submit'], button {
-    display: inline-block;
-    padding: .75em 1.5em;
-    background: $pink;
-    border: none;
-    color: $black;
-    font-weight: 800;
-    font-size: 1.25em;
-    &:hover, &:focus {
-      cursor: pointer;
-      background-color: $brightPink;
-    }
+}
+.c-cta__link, input[type='submit'], button {
+  display: inline-block;
+  padding: .75em 1.5em;
+  background: $pink;
+  border: none;
+  color: $black;
+  font-weight: 800;
+  font-size: 1.25em;
+  &:hover, &:focus {
+    cursor: pointer;
+    background-color: $brightPink;
   }
 }

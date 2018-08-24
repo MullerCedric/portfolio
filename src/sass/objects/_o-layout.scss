@@ -1,2 +1,8 @@
 .o-layout {
+  margin-top: 100px;
+  margin-bottom: 250px;
+  &__content {
+    max-width: 1340px;
+    margin: 0 auto;
+  }
 }
