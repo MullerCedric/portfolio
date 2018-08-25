@@ -1,0 +1,23 @@
+.c-gallery {
+  &__item {
+    display: inline-block;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    &:nth-child(5n+1) {
+      margin-left: 0;
+    }
+    &:nth-last-child(-n+5) {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    overflow: hidden;
+  }
+  &__thumbnail {
+    transition: transform .2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

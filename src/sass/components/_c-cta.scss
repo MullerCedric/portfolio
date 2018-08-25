@@ -1,6 +1,9 @@
 .c-cta {
   display: inline-block;
-  margin: 1.75em 2.5em 0;
+  margin: 1.75em 5em 1.5em 0;
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 .c-cta__link, input[type='submit'], button {
   display: inline-block;

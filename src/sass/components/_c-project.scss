@@ -1,0 +1,37 @@
+.c-project {
+  background-color: white;
+  &__title {
+    margin: -60px -170px 20px;
+  }
+  &__thumbnail {
+    width: 150px;
+    height: 150px;
+    background-color: $yellow;
+    background-image: radial-gradient($black 7%, transparent 7%),
+    radial-gradient($black 7%, transparent 7%);
+    background-size: 40px 40px;
+    background-position: 5px 5px,25px 25px;
+    float: left;
+    margin-right: 1em;
+  }
+  &__info {
+    @include clearfix;
+    margin-bottom: 3em;
+  }
+  &__image {
+    position: relative;
+    margin-left: -255px;
+    margin-right: -255px;
+    margin-bottom: 1.5em;
+    text-align: center;
+    &:after {
+      @include pseudo;
+      height: 80%;
+      width: 100%;
+      background-color: $pink;
+      position: absolute;
+      top: 20%;
+      z-index: -1;
+    }
+  }
+}

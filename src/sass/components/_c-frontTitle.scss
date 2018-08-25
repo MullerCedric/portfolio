@@ -3,20 +3,7 @@
   font-weight: 900;
   text-transform: uppercase;
   &__name {
-    display: inline-block;
-    position: relative;
     letter-spacing: 20px;
-    z-index: 2;
-    &:after {
-      display: block;
-      content: '';
-      position: absolute;
-      background-color: $yellow;
-      left: -4px;
-      top: 45px;
-      right: -10px;
-      bottom: 15px;
-      z-index: -1;
-    }
+    display: inline-block;
   }
 }

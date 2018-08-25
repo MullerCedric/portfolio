@@ -1,8 +1,10 @@
 .c-changedTitle {
   &:before {
-    display: block;
+    @include pseudo();
   }
   &--projects:before {
     content: 'Mes travaux';
+    display: inline-block;
+    background-color: $yellow;
   }
 }

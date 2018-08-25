@@ -9,7 +9,7 @@
 <main id="content" class="o-vCenteredContent c-dottedBlue">
     <header>
         <h1 class="c-frontTitle">
-            <span class="hidden">Portfolio de </span><div class="c-frontTitle__name">Cédric</div><br><div class="c-frontTitle__name">Müller</div>
+            <span class="hidden">Portfolio de </span><div class="c-frontTitle__name c-highlight">Cédric</div><br><div class="c-frontTitle__name c-highlight">Müller</div>
         </h1>
         <div class="hidden">
             <a href="#nav">Aller à la navigation</a>

@@ -1,0 +1,16 @@
+.c-highlight {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: $yellow;
+    left: -.075em;
+    bottom: 0.125em;
+    height: 60%;
+    width: 105%;
+    z-index: -1;
+  }
+}

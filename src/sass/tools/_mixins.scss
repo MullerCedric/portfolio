@@ -1,7 +1,10 @@
-/*@mixin clearfix() {
-  &::after {
-    content: "";
-    display: table;
+@mixin pseudo($display: block, $content: ''){
+  content: $content;
+  display: $display;
+}
+@mixin clearfix() {
+  &:after {
+    @include pseudo(table);
     clear: both;
   }
-}*/
+}
