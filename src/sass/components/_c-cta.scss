@@ -17,4 +17,7 @@
     cursor: pointer;
     background-color: $brightPink;
   }
+  &:after {
+    display: none;
+  }
 }
