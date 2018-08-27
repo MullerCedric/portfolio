@@ -11,7 +11,7 @@
 	if ( have_posts() ): while ( have_posts() ): the_post();
 		$intro = get_field( 'basic_info' ); ?>
         <header class="c-project__info">
-            <h1 class="c-project__title"><span class="c-highlight"><?= get_the_title(); ?></span></h1>
+            <h1><span class="c-highlight"><?= get_the_title(); ?></span></h1>
             <div class="hidden">
                 <a href="#nav">Aller à la navigation</a>
             </div>
