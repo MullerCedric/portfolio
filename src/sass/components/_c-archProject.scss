@@ -22,10 +22,10 @@
     background-position: 5px 5px,25px 25px;
   }
   &:nth-child(odd) {
-    margin-left: 85px;
+    margin-left: -170px;
   }
   &:nth-child(even) {
-    margin-right: 0;
+    margin-right: -170px;
     margin-left: 30px;
     position: relative;
     top: 165px;

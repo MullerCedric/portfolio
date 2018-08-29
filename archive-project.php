@@ -6,9 +6,11 @@
 <html lang="fr">
 <?php get_header(); ?>
 <body>
-<main id="content" class="c-blueRect o-layout">
+<main id="content" class="o-layout">
+    <div class="o-layout__wrapper c-blueRect">
     <header>
-        <h1 class="c-changedTitle c-changedTitle--projects c-blueRect__title">
+        <h1 class="c-blueRect__title">
+            <span class="c-changedTitle c-changedTitle--projects c-blueRect__title c-highlight"></span>
             <span class="hidden">Travaux et projets de Cédric Müller</span>
         </h1>
         <div class="hidden">
@@ -32,7 +34,7 @@
                    class="c-archProject__permalink c-cta__link">Voir le projet</a>
             </div>
         </article><?php
-    endwhile; endif; ?></div>
+    endwhile; endif; ?></div></div>
 </main><?php
 get_template_part( 'inc/part', 'nav' );
 get_footer(); ?>
