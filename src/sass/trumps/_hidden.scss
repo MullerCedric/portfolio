@@ -8,17 +8,9 @@
     height: auto;
     width: auto;
     clip: auto;
-    left: 16px;
-    top: 16px;
+    left: 20px;
+    top: 20px;
     padding: .75em 1.25em;
     background-color: $white;
-  }
-}
-
-@each $name, $rule in $breakpoints {
-  @media #{$rule} {
-    .hidden\@#{$name} {
-      display: none; //isn't accessible with a media querry
-    }
   }
 }

@@ -1,20 +1,20 @@
 *, body {
   font-size: 20px;
   font-weight: 100;
+  @include mq('desktop-wide') {
+    font-size: 18px;
+  }
+  @include mq('phone-wide') {
+    font-size: 16px;
+  }
 }
 
 h1 {
   font-size: 3.5em;
+  @include mq('phone-wide') {
+    font-size: 3em;
+  }
 }
 h2 {
   font-size: 1.5em;
-}
-
-@media all and (max-width: $mobile) {
-  h1 {
-    font-size: 2.65em;
-  }
-  h2 {
-    font-size: 1.85em;
-  }
 }

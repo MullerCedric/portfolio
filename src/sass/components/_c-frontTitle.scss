@@ -2,6 +2,13 @@
   font-size: 120px;
   font-weight: 900;
   text-transform: uppercase;
+  @include mq('desktop') {
+    font-size: 8vw;
+  }
+  @include mq('tablet') {
+    font-size: 10vw;
+    margin-top: .5em;
+  }
   &__name {
     letter-spacing: 20px;
     display: inline-block;

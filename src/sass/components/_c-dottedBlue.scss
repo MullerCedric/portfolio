@@ -1,6 +1,10 @@
 .c-dottedBlue {
   background-image: linear-gradient(to right, $blue, $blue 40%, $white 40%);
   z-index: -5;
+  @include mq('desktop') {
+    padding-bottom: 5em;
+    box-sizing: border-box;
+  }
   &:before {
     display: block;
     content: '';

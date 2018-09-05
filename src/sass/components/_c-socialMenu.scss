@@ -2,6 +2,10 @@
   position: fixed;
   left: 2.5vw;
   bottom: 1vh;
+  @include mq('desktop') {
+    bottom: auto;
+    top: 1vh
+  }
   &__link {
     color: $black;
     background-color: transparent;

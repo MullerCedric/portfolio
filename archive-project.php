@@ -17,11 +17,11 @@
             <a href="#nav">Aller à la navigation</a>
         </div>
     </header>
-    <div class="o-layout__content"><?php
+    <div class="c-archProject__container"><?php
 	$projects = new WP_Query( [ 'post_type' => 'project' ] );
 	if ( $projects->have_posts() ): while ( $projects->have_posts() ): $projects->the_post();
 		$content = get_field( 'basic_info' );
-		?><article class="c-archProject">
+		?><div class="c-archProject__wrapper"><article class="c-archProject">
             <div class="c-archProject__thumbnail">
                 <?php if($content['thumb']['ID']) echo wp_get_attachment_image( $content['thumb']['ID'], 'cm-projectThumb' ); ?>
             </div>
@@ -33,7 +33,7 @@
                 <a href="<?php the_permalink(); ?>" title="Voir le projet <?= get_the_title(); ?>"
                    class="c-archProject__permalink c-cta__link">Voir le projet</a>
             </div>
-        </article><?php
+        </article></div><?php
     endwhile; endif; ?></div></div>
 </main><?php
 get_template_part( 'inc/part', 'nav' );

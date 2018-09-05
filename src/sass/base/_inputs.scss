@@ -4,10 +4,16 @@ input[type='text'], input[type='email'], textarea {
   border-bottom: 3px solid $black;
   background-color: $yellow;
   padding: .5em .75em;
+  box-sizing: border-box;
   &:focus {
     background-color: $lightYellow;
   }
 }
 input[type='submit'] {
   width: auto;
+  @include mq('phone-wide') {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }

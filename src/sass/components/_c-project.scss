@@ -17,12 +17,14 @@
   }
   &__image {
     position: relative;
-    margin-left: -255px;
-    margin-right: -255px;
-    margin-bottom: 1.5em;
+    margin: 0 -10vw 1.5em;
     text-align: center;
+    @include mq('desktop-wide', 'min') {
+      margin-left: -255px;
+      margin-right: -255px;
+    }
     &:after {
-      @include pseudo;
+      @include pseudo();
       height: 80%;
       width: 100%;
       background-color: $pink;

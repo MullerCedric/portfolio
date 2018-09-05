@@ -1,12 +1,17 @@
 .o-layout {
-  margin-top: 100px;
-  margin-bottom: 175px;
-  &__content {
-    max-width: 1340px;
-    margin: 0 auto;
-  }
+  margin-top: 4em;
+  margin-bottom: 8.5em;
   &__wrapper {
-    max-width: 830px;
+    width: percentage( (100 / 1680 * 830) / 100 );
     margin: 0 auto;
+    @include mq('desktop-wide', 'min') {
+      width: 830px;
+    }
+    @include mq('tablet') {
+      width: 65%;
+    }
+    @include mq('phone-wide') {
+      width: 83%;
+    }
   }
 }

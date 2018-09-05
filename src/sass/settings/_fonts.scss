@@ -11,6 +11,17 @@
 }
 
 @font-face {
+  font-family: 'portfont';
+  src:  url('../fonts/portfont.eot?73l2lz');
+  src:  url('../fonts/portfont.eot?73l2lz#iefix') format('embedded-opentype'),
+  url('../fonts/portfont.ttf?73l2lz') format('truetype'),
+  url('../fonts/portfont.woff?73l2lz') format('woff'),
+  url('../fonts/portfont.svg?73l2lz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Mosk';
   src: url('../fonts/mosk_thin_100-webfont.woff2') format('woff2'),
   url('../fonts/mosk_thin_100-webfont.woff') format('woff');

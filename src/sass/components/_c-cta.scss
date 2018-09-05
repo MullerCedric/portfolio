@@ -4,6 +4,12 @@
   &:last-of-type {
     margin-right: 0;
   }
+  @include mq('phone-wide') {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .c-cta__link, input[type='submit'], button {
   display: inline-block;
@@ -19,5 +25,9 @@
   }
   &:after {
     display: none;
+  }
+  @include mq('phone-wide') {
+    display: block;
+    text-align: center;
   }
 }

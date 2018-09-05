@@ -6,15 +6,28 @@
   top: 0;
   bottom: 0;
   text-align: center;
+  z-index: 5;
+  @include mq('desktop') {
+    top: auto;
+    left: 0;
+    width: auto;
+    box-shadow: 0 3px 35px $transpBlue;
+  }
+
   &__list {
-    transform-origin: left top;
-    transform:rotate(-90deg) translateX(-100%);
-    width: 100vh;
-    height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
+    @include mq('desktop', 'min') {
+      transform-origin: left top;
+      transform:rotate(-90deg) translateX(-100%);
+      width: 100vh;
+      height: 240px;
+      flex-direction: row;
+    }
   }
+
   &__link {
     font-size: 1.25em;
     font-weight: 600;
@@ -28,20 +41,63 @@
       display: none;
     }
     &--index {
-      font-size: 0;
+      font-size: 1px;
+      letter-spacing: -1px;
+      color: transparent;
       &:after {
         display: inline-block;
         content: ';';
         position: static;
-        font-size: 120px;
+        font-size: 4rem;
         font-weight: 900;
-        transform: rotate(90deg);
-        padding: .13em .5em;
+        padding: 0 2rem .25rem;
+        margin-top: -16px;
         background-color: transparent;
         width: auto;
+        letter-spacing: normal;
+        color: $black;
+        @include mq('desktop', 'min') {
+          transform: rotate(90deg);
+          font-size: 6rem;
+          padding: .13em .5em;
+        }
+        @include mq('tablet', 'min') {
+          margin-top: -5px;
+        }
       }
       &:hover:after {
         width: auto;
+      }
+    }
+
+    @include mq('desktop') {
+      padding: 1.3em 2em;
+    }
+    @include mq('tablet') {
+      font-size: 1em;
+      padding: 1em 1.5em;
+      &:before {
+        font-family: 'portfont', sans-serif;
+        font-size: 1.75em;
+        transform: rotate(0.03deg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        @include pseudo($content: '\e96c'); //icon by default : contact
+      }
+      &--me:before {
+        content: '\e971';
+      }
+      &--projects:before {
+        content: '\e908';
+      }
+      &--index {
+        font-size: 1px;
+      }
+    }
+    @include mq('phone-wide') {
+      font-size: .82em;
+      &--index {
+        font-size: 1px;
       }
     }
   }

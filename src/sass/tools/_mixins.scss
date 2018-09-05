@@ -1,10 +1,42 @@
-@mixin pseudo($display: block, $content: ''){
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+@mixin pseudo($display: block, $content: '', $pos: false){
   content: $content;
   display: $display;
+  @if $pos {
+    position: $pos;
+  }
+}
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+  $padding: unquote( ( $y / $x ) * 100 + '%' );
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
+  }
 }
 @mixin clearfix() {
   &:after {
     @include pseudo(table);
     clear: both;
+  }
+}
+@mixin mq($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == min {
+      $width: $width + 1px;
+    }
+    @media all and (#{$type}-width: $width) {
+      @content;
+    }
   }
 }
